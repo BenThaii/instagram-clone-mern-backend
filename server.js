@@ -20,10 +20,6 @@ const pusher = new Pusher({                     //to make our app real time
 //middlewares
 app.use(express.json())   // interpret everything as JSON
 app.use(cors())         //for headers (security, etc...)
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin", "*'),
-    res.setHeader('Access-control-Allow-Headers", "*')
-})
 
 //DB config
 const connection_url = 'mongodb+srv://admin:2dfmPNWrWkm8tWOY@cluster0.xegfg.mongodb.net/instaDB?retryWrites=true&w=majority'        // create a db named instaDB
