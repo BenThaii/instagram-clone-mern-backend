@@ -21,7 +21,7 @@ const pusher = new Pusher({                     //to make our app real time
 app.use(express.json())   // interpret everything as JSON
 app.use(cors())         //for headers (security, etc...)
 app.use((req, res, next) => {
-    res.setHeader('Access-control-Allow-Origin", "*'),
+    res.setHeader('Access-Control-Allow-Origin", "*'),
     res.setHeader('Access-control-Allow-Headers", "*')
 })
 
